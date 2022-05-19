@@ -48,6 +48,9 @@ b, strong
 	padding: 0
 	max-width: 1290px
 
+.bg-grey
+	background-color: $bg-grey
+
 .title
 	font-family: "MulishBold", sans-serif
 	font-size: 40px
@@ -98,47 +101,54 @@ b, strong
 	&__btn
 		color: $accent
 		background-color: #fff
+
 .licenses
 
 	&__inner
-
-		&__title
-
-		&__box
-
-		&__box-img-wrapper
-
-		&__box-img
-
-.bg-grey
+		padding-top: 40px
+	&__title
+		text-align: center
+	&__box
+		display: grid
+		grid-template-columns: repeat(3, 300px)
+		gap: 30px
+		max-width: 990px
+		margin: -27px auto 0
+		position: relative
+		bottom: -67px
+	&__box-img-wrapper
+		min-width: 300px
+		width: 100%
+	&__box-img
 
 .feedback
-	&_col-left
 
-		&__inner
+	&__inner
+		padding: 187px 0 200px
+	&__col-left
 
-		&__col-left-img
+	&__col-left-img
 
-		&__col-right
+	&__col-right
 
-		&__form
+	&__form
 
-		&__form-title
+	&__form-title
 
-		&__form-row
+	&__form-row
 
-		&__form-checkbox-group
+	&__form-checkbox-group
 
-		&__form-checkbox
+	&__form-checkbox
 
-		&__form-label
+	&__form-label
 
-		&__form-input
+	&__form-input
 
-		&__form-agreement
+	&__form-agreement
 
-		&__form-agreement-checkbox
+	&__form-agreement-checkbox
 
-		&__form-agreement-label
+	&__form-agreement-label
 
-		&__form-btn
+	&__form-btn
