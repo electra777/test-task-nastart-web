@@ -1,0 +1,25 @@
+{
+    "name": "test-task-nastart-web",
+    "version": "1.0.0",
+    "description": "test-task-nastart-web",
+    "main": "index.js",
+    "private": true,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "browser-sync": "latest",
+        "gulp": "latest",
+        "gulp-autoprefixer": "latest",
+        "gulp-clean-css": "latest",
+        "gulp-concat": "latest",
+        "gulp-file-include": "latest",
+        "gulp-notify": "latest",
+        "gulp-rename": "latest",
+        "gulp-rsync": "latest",
+        "gulp-sass": "^5.1.0",
+        "gulp-uglify": "latest",
+        "gulp-util": "latest",
+        "sass": "^1.49.9"
+    }
+}
