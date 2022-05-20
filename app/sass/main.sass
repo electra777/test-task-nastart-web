@@ -72,9 +72,53 @@ b, strong
 	cursor: pointer
 
 .about-operation
-	&_inner
+	&__inner
+		margin-bottom: 120px
+	&__tiitle
+		margin: 200px 0 40px
 
-		&__tiitle
+.about-operation
+
+	&__slider-slide-row
+		display: grid
+		grid-template-columns: 520px 630px
+		gap: 140px
+
+	&__slider-slide-col-left
+		max-width: 520px
+		width: 100%
+		max-height: 450px
+		height: 100%
+	&__slider-slide-img
+
+	&__slider-slide-col-right
+
+	&__slider-slide-title
+		color: $accent
+		margin-bottom: 40px
+	&__slider-slide-text
+		margin-bottom: 35px
+
+	&__slider-btns
+		position: absolute
+		bottom: 12px
+		right: 62px
+	&__slider-btn-next
+		width: 52px
+	&__slider-btn-next::after
+		display: none
+	&__slider-btn-next-svg
+		width: 50px
+		height: 65px
+		transform: rotate(180deg)
+	&__slider-btn-prev
+		width: 52px
+	&__slider-btn-prev::after
+		display: none
+	&__slider-btn-prev-svg
+		width: 50px
+		height: 65px
+	&__slider-pagination
 
 .our-target
 	&__inner
