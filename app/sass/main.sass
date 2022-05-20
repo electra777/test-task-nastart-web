@@ -124,31 +124,102 @@ b, strong
 .feedback
 
 	&__inner
-		padding: 187px 0 200px
+		padding: 217px 0 200px
+	&__column
+		display: grid
+		grid-template-columns: 520px 1fr
+		gap: 110px
+		max-width: 1260px
+		margin-left: auto
 	&__col-left
-
+		margin: -30px 0 30px -30px
+		max-width: 520px
+		width: 100%
+		max-height: 423px
+		height: 100%
 	&__col-left-img
 
 	&__col-right
-
+		padding: 40px 30px 40px 0
 	&__form
 
 	&__form-title
-
+		margin-bottom: 30px
 	&__form-row
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		gap: 30px
+		max-height: 66px
+		&:not(:last-of-type)
+			margin-bottom: 30px
 
 	&__form-checkbox-group
+		display: flex
 
 	&__form-checkbox
-
+		display: none
+		&:checked + .feedback__form-label::after
+			display: block
 	&__form-label
-
+		padding-left: 43px
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 22px
+			height: 22px
+			border-radius: 50%
+			background-color: $accent
+		&::after
+			content: ''
+			position: absolute
+			top: 7px
+			left: 6px
+			width: 11px
+			height: 6px
+			border-radius: 2%
+			border-left: 2px solid #fff
+			border-bottom: 2px solid #fff
+			transform: rotate(-45deg)
+			display: none
 	&__form-input
-
+		padding-bottom: 11px
+		border: none
+		border-bottom: 1px solid #333
+		background-color: $bg-grey
+		&::placeholder
+			color: $text
 	&__form-agreement
-
+		display: flex
 	&__form-agreement-checkbox
-
+		display: none
+		&:checked + .feedback__form-agreement-label::after
+			display: block
 	&__form-agreement-label
-
+		padding-left: 32px
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			top: 6px
+			left: 0
+			width: 20px
+			height: 20px
+			border: 2px solid $accent
+		&::after
+			content: ''
+			position: absolute
+			top: 12px
+			left: 5px
+			width: 11px
+			height: 6px
+			border-radius: 2%
+			border-left: 2px solid $accent
+			border-bottom: 2px solid $accent
+			transform: rotate(-45deg)
+			display: none
 	&__form-btn
+		background-color: #EE443A
+		color: #fff
