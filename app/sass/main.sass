@@ -41,12 +41,16 @@ body
 b, strong
 	font-weight: bold
 
+.wrapper
+
 .main
 
 .container
 	margin: 0 auto
 	padding: 0
 	max-width: 1290px
+	@media (max-width: 1350px)
+		padding: 0 15px
 
 .bg-grey
 	background-color: $bg-grey
@@ -56,7 +60,11 @@ b, strong
 	font-size: 40px
 	line-height: 52px
 	margin: 0
-
+	@media (max-width: 500px)
+		font-size: 32px
+	@media (max-width: 375px)
+		font-size: 26px
+		line-height: 32px
 .btn
 	max-width: 153px
 	width: 100%
@@ -74,35 +82,55 @@ b, strong
 .about-operation
 	&__inner
 		margin-bottom: 120px
+		@media (max-width: 950px)
+			margin-bottom: 70px
 	&__tiitle
 		margin: 200px 0 40px
-
-.about-operation
-
+		@media (max-width: 950px)
+			margin-top: 70px
+			text-align: center
 	&__slider-slide-row
 		display: grid
 		grid-template-columns: 520px 630px
 		gap: 140px
+		@media (max-width: 1350px)
+			grid-template-columns: 1fr 1fr
+			gap: 75px
+		@media (max-width: 950px)
+			grid-template-columns: 1fr
+			gap: 25px
 
 	&__slider-slide-col-left
 		max-width: 520px
 		width: 100%
 		max-height: 450px
 		height: 100%
+		@media (max-width: 950px)
+			margin: 0 auto
 	&__slider-slide-img
 
 	&__slider-slide-col-right
-
+		@media (max-width: 950px)
+			padding-bottom: 45px
 	&__slider-slide-title
 		color: $accent
 		margin-bottom: 40px
+		@media (max-width: 950px)
+			text-align: center
+			margin-bottom: 20px
 	&__slider-slide-text
 		margin-bottom: 35px
-
+		@media (max-width: 950px)
+			margin-bottom: 15px
 	&__slider-btns
 		position: absolute
-		bottom: 12px
-		right: 62px
+		width: 145px
+		height: 50px
+		bottom: 0
+		right: 0
+		z-index: 100
+		@media (max-width: 500px)
+			width: 120px
 	&__slider-btn-next
 		width: 52px
 	&__slider-btn-next::after
@@ -110,7 +138,8 @@ b, strong
 	&__slider-btn-next-svg
 		width: 50px
 		height: 65px
-		transform: rotate(180deg)
+		@media (max-width: 500px)
+			width: 36px
 	&__slider-btn-prev
 		width: 52px
 	&__slider-btn-prev::after
@@ -118,15 +147,33 @@ b, strong
 	&__slider-btn-prev-svg
 		width: 50px
 		height: 65px
+		transform: rotate(180deg)
+		@media (max-width: 500px)
+			width: 36px
 	&__slider-pagination
+		font-size: 20px
+		margin-left: 35px
+		@media (max-width: 950px)
+			margin: 0
+		@media (max-width: 500px)
+			font-size: 18px
+			text-align: left
+		.swiper-pagination-current
+			color: $accent
 
 .our-target
+	@media (max-width: 1350px)
+		padding: 0 15px
 	&__inner
 		background-color: $accent
 		color: #fff
 		padding: 40px
 		margin-bottom: 120px
 		position: relative
+		@media (max-width: 950px)
+			margin-bottom: 70px
+		@media (max-width: 375px)
+			padding: 20px
 		&::after
 			content: ''
 			position: absolute
@@ -135,7 +182,13 @@ b, strong
 			background: url('../img/quotes.png') no-repeat
 			max-width: 180px
 			width: 100%
-			min-height: 140px
+			max-height: 140px
+			height: 100%
+			background-size: contain
+			@media (max-width: 830px)
+				max-width: 140px
+			@media (max-width: 375px)
+				max-width: 110px
 	&__title
 		margin-bottom: 40px
 	&__text
@@ -156,44 +209,75 @@ b, strong
 		display: grid
 		grid-template-columns: repeat(3, 300px)
 		gap: 30px
+		justify-content: center
 		max-width: 990px
 		margin: -27px auto 0
 		position: relative
 		bottom: -67px
+		@media (max-width: 1350px)
+			grid-template-columns: repeat(3, 1fr)
+		@media (max-width: 500px)
+			grid-template-columns: 1fr
 	&__box-img-wrapper
-		min-width: 300px
+		max-width: 300px
 		width: 100%
+		@media (max-width: 500px)
+			margin: 0 auto
+			max-width: 250px
 	&__box-img
 
 .feedback
-
+	@media (max-width: 1350px)
+		padding: 0 15px
 	&__inner
 		padding: 217px 0 200px
+		@media (max-width: 1350px)
+			padding-left: 30px
+		@media (max-width: 950px)
+			padding-bottom: 70px
+		@media (max-width: 830px)
+			padding-left: 0
 	&__column
 		display: grid
 		grid-template-columns: 520px 1fr
 		gap: 110px
 		max-width: 1260px
 		margin-left: auto
+		@media (max-width: 1350px)
+			grid-template-columns: 1fr 1fr
+			gap: 5px
+		@media (max-width: 830px)
+			grid-template-columns: 1fr
 	&__col-left
 		margin: -30px 0 30px -30px
 		max-width: 520px
 		width: 100%
 		max-height: 423px
 		height: 100%
+		@media (max-width: 830px)
+			margin: -30px auto 0
 	&__col-left-img
 
 	&__col-right
 		padding: 40px 30px 40px 0
+		@media (max-width: 830px)
+			padding: 40px 30px
 	&__form
 
 	&__form-title
 		margin-bottom: 30px
+		@media (max-width: 830px)
+			text-align: center
 	&__form-row
 		display: grid
 		grid-template-columns: repeat(2, 1fr)
 		gap: 30px
 		max-height: 66px
+		@media (max-width: 1350px)
+			max-height: 100%
+		@media (max-width: 950px)
+			grid-template-columns: 1fr
+
 		&:not(:last-of-type)
 			margin-bottom: 30px
 
@@ -233,6 +317,11 @@ b, strong
 		border: none
 		border-bottom: 1px solid #333
 		background-color: $bg-grey
+		@media (max-width: 830px)
+			max-width: 60%
+		@media (max-width: 500px)
+			max-width: 100%
+
 		&::placeholder
 			color: $text
 	&__form-agreement
@@ -267,3 +356,5 @@ b, strong
 	&__form-btn
 		background-color: #EE443A
 		color: #fff
+		@media (max-width: 500px)
+			margin: 0 auto
