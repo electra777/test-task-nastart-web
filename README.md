@@ -1,15 +1,18 @@
-# Test-task-nastart-web
+# Тестовое задание НастАртВЕБ
 
-[<img src="./project.png">]()
+#### Ссылка на GitHub Pages:
 
-### Stack:
+https://electra777.github.io/test-task-nastart-web/app/
+
+#### Stack:
 
 - HTML
 - SASS
 - JS/JQuery
 - Gulp
 
-### How to start:
+#### How to start:
 
 - Npm i
 - Gulp
+  [<img src="./project.png">]()
