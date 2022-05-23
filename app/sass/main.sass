@@ -41,10 +41,6 @@ body
 b, strong
 	font-weight: bold
 
-.wrapper
-
-.main
-
 .container
 	margin: 0 auto
 	padding: 0
@@ -99,7 +95,6 @@ b, strong
 		@media (max-width: 950px)
 			grid-template-columns: 1fr
 			gap: 25px
-
 	&__slider-slide-col-left
 		max-width: 520px
 		width: 100%
@@ -107,8 +102,6 @@ b, strong
 		height: 100%
 		@media (max-width: 950px)
 			margin: 0 auto
-	&__slider-slide-img
-
 	&__slider-slide-col-right
 		@media (max-width: 950px)
 			padding-bottom: 45px
@@ -200,7 +193,6 @@ b, strong
 		background-color: #fff
 
 .licenses
-
 	&__inner
 		padding-top: 40px
 	&__title
@@ -224,7 +216,6 @@ b, strong
 		@media (max-width: 500px)
 			margin: 0 auto
 			max-width: 250px
-	&__box-img
 
 .feedback
 	@media (max-width: 1350px)
@@ -256,14 +247,10 @@ b, strong
 		height: 100%
 		@media (max-width: 830px)
 			margin: -30px auto 0
-	&__col-left-img
-
 	&__col-right
 		padding: 40px 30px 40px 0
 		@media (max-width: 830px)
 			padding: 40px 30px
-	&__form
-
 	&__form-title
 		margin-bottom: 30px
 		@media (max-width: 830px)
@@ -277,13 +264,10 @@ b, strong
 			max-height: 100%
 		@media (max-width: 950px)
 			grid-template-columns: 1fr
-
 		&:not(:last-of-type)
 			margin-bottom: 30px
-
 	&__form-checkbox-group
 		display: flex
-
 	&__form-checkbox
 		display: none
 		&:checked + .feedback__form-label::after
@@ -321,7 +305,6 @@ b, strong
 			max-width: 60%
 		@media (max-width: 500px)
 			max-width: 100%
-
 		&::placeholder
 			color: $text
 	&__form-agreement
